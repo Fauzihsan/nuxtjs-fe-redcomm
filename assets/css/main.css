@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ff3d00;
+  --secondary-color: #2f3746;
+  --bg-color: #151921;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.box-comment {
+  border-radius: 20px;
+  background: var(--secondary-color);
+  box-shadow: 10px 10px 30px #282f3c, -10px -10px 30px #363f51;
+}
+
+/* create a custom loading animation */
+.loading-spinner {
+  border: 16px solid white;
+  border-top: 16px solid var(--primary-color);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
